@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "synapseflow"
+version = "0.1.0"
+description = "A lightweight cortex-spinal-evolution micro-kernel for agentic enterprise workflows"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["httpx>=0.27,<1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["synapse_flow"]
